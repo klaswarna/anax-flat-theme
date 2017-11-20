@@ -1,0 +1,131 @@
+//här skall skapas anaxflat styling enligt valt grid. Ta typ 980 som största storlek
+
+// och 24 kolumner
+
+@import url(modules.less);
+
+@import url(grid-helpers.less);
+
+@magicNumber: 24px;
+
+/*body {
+    background-color: yellow;
+}*/
+
+// gör så att showgrid bara funkar vid ?vgrid eller sidan grid.md eller skriv i texten att
+//gjort på annat sätt
+.inner-wrap {
+    .container();
+    max-width: 960px;
+
+    html.vgrid &, {
+    .showGrid(960px);
+    }
+}
+
+body.route-grid {
+    .showGrid(960px);
+}
+
+.row {
+    .row();
+
+}
+
+.outer-wrap-header,
+.outer-wrap-main,
+.footer-column-wrapper {
+    margin-bottom: @magicNumber;
+}
+
+.footer-column-wrapper {
+    .clearfix();
+}
+
+
+//skit eventuellt i understående
+.logo-1 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.site-logo-text {
+    .column(3);
+
+}
+
+.navbar2 {
+    .column(9);
+}
+
+.main {
+    .column(8);
+    .push(2);
+    background-color: #81BF74;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .main {
+        .column(12);
+    }
+}
+
+
+
+
+
+.sidebar {
+    .column(2);
+    background-color: #559143;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.byline {
+    border: 1px solid black;
+    overflow: auto;
+    text-align: center;
+    padding: 0.5em;
+    clear: both;
+    .column(8);
+}
+
+@media (max-width: 600px) {
+    .byline {
+        .column(12);
+    }
+}
+
+
+
+
+.footer-column {
+    .column(4);
+    background-color: #92CF87;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .footer-column {
+        .column(12);
+    }
+}
+
+
+
+.site-footer {
+    .column(12);
+    background-color: #BBE4B6;
+    opacity: 0.8;
+}
+
+.breadcrumb-list {
+    display: none;
+}

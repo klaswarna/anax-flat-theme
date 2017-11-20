@@ -1,0 +1,142 @@
+@import "typography-font-families.less";
+@import "typography-sizes.less";
+@import "typography-mixins.less";
+@import "typography-defaults.less";
+
+.column-b {
+    .font();
+    .typographyHeadings();
+    .typographyTextElements();
+    .typographyCodeElements();
+    .typographyListElements();
+    .typographyTableElements();
+    .typographyOtherElements();
+}
+
+.hgrid, .route-typography {
+    background-image: url(../img/horisontal-grid-24.png);
+}
+
+//här kan man lägga till olika familjestilar, ev ändra längst ner i typography-font-families.less
+p {
+    font-family: @fontFamilyBody;
+    line-height: @lineHeight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @fontFamilyHeadings;
+}
+
+pre {
+font-family: @fontFamilyCode;
+}
+
+
+
+
+/*
+
+nav div ul a {
+    @height: 48px;
+    .calcMargin(@height);
+    margin-bottom: @margin / 2!important;
+}
+
+
+*/
+.flash-wrap img {
+    @height: 20*@magicNumber;
+    height: @height;
+    .calcMargin(@height);
+    margin-bottom: @margin / 2!important;
+}
+
+
+
+
+/*.navbar2 {
+    padding-bottom: 2 * @magicNumber - @fontSizeBody;
+}*/
+
+@magicNumber:   24px; /* 16px - 100%/1.5 */
+//@magicNumber:   22px; /* 16px - 100%/1.375 */
+@fontSizeBody:  16px;
+@lineHeight:    (unit(@magicNumber) / unit(@fontSizeBody));
+
+h1 {
+    font-size: @fontSizeH1;
+}
+h2 {
+    font-size: @fontSizeH2;
+}
+h3 {
+    font-size: @fontSizeH3;
+}
+h4 {
+    font-size: @fontSizeH4;
+}
+h5 {
+    font-size: @fontSizeH5;
+}
+h6 {
+    font-size: @fontSizeH6;
+}
+
+/*.byline {
+    box-sizing: border-box;
+    height: 10 * @lineHeight; //funkar inte
+    padding-bottom: @magicNumber;
+}*/
+
+
+.byline p {
+margin: 0;
+@height: 24px;
+height: @height;
+.calcMargin(@height);
+padding-bottom:  @margin;
+
+
+
+}
+/*.byline br {
+    height: 24px;
+}*/
+
+.byline {
+box-sizing: border-box;
+@height: 120px;
+height: @height;
+.calcMargin(@height);
+margin-bottom: @margin;
+
+}
+.byline img {height: @lineHeight*3em!important;}
+
+.column.footer-column  {
+    @height: 120px;
+    height: @height;
+    .calcMargin(@height);
+    margin-bottom: @margin;
+}
+
+.block.site-footer  {
+    @height: 120px;
+    height: @height;
+    .calcMargin(@height);
+    margin-bottom: @margin;
+}
+
+
+
+
+
+/*
+
+@fontSizeCodeInline:  1.25em;
+@fontSizeCodeBlock:   1.25em;
+@lineHeightCodeBlock: 1.6;
+
+@fontSizeSupSub: 0.75em;
+
+@fontSizeSmall: 0.875em;*/
