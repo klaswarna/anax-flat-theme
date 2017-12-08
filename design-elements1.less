@@ -1,0 +1,97 @@
+//Försök med kedjorna som bakgrundsbild och allmänt svartvit tema
+@import url(modules.less);
+@import url(base.less);
+
+@background-color: #ECF8EB;
+@main-color: #EEEEEE;
+@footer-column-color: #BBE4B6;
+@site-footer-color: #BBE4B6;
+@outer-header: #DDDDDD;
+@byline: #AAAAAA;
+
+@navbarItemBgColor:         #AAAAAA;
+@navbarItemSelectedBgColor: #DDDDDD; //(funkar ej)//
+@navbarItemHoverBgColor: #BBBBBB;
+
+@outer-wrap-after-main: #EEEEEE;
+@outer-wrap-footer: #92CF87;
+
+body {
+    background-image: url(../img/chains.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.flash-wrap {
+    display: none;
+}
+
+.article {
+    /*background-color: grey;*/
+    /*opacity: 50% !important; detta funkar inte av nån anledning*/
+    color: white;
+}
+
+
+img {
+    filter: grayscale(100%);
+
+}
+
+.figure {
+    border: #888888;
+}
+
+/*.wrap-all {
+    background-color: @background-color;
+}*/
+
+/*.inner-wrap-main {
+    background-color: @main-color;
+}*/
+
+/*.outer-wrap-header {
+    background-color: @outer-header;
+}*/
+
+/*.outer-wrap-main {
+    background-color: @main-color;
+}*/
+
+/*.outer-wrap-after-main {
+    background-color: @outer-wrap-after-main;
+}*/
+
+.outer-wrap-footer {
+    /*background-color: @outer-wrap-footer;*/
+}
+
+
+/*.footer-column-wrapper {
+    background-color: @footer-column-color;
+}*/
+
+.footer-column {
+    /*background-color: @footer-column-color;*/
+}
+
+
+
+.site-footer {
+    /*background-color: @site-footer-color;*/
+}
+
+.byline {
+    background-color: @byline;
+    opacity: 10%;
+}
+
+a {
+    color: #999999;
+}
+ a:visited {
+    color: #777777;
+ }

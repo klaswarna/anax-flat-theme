@@ -1,0 +1,203 @@
+//linjer och textrurer
+
+@import url(normalize.less);
+@import url(layout.less);
+@import url(responsive-menu.less);
+@import url(grid-float.less);
+@import url(typography.less);
+@import url(figure.less);
+@import url(base.less);
+
+
+
+
+
+
+
+
+
+
+@background-color: #ECF8EB;
+@main-color: #EEEEEE;
+@footer-column-color: #BBE4B6;
+@site-footer-color: #BBE4B6;
+@outer-header: #DDDDDD;
+@byline: #559143;
+
+
+
+//navbaren
+@navbarItemBgColor:         #92CF87;
+@navbarItemSelectedBgColor: #DDDDDD; //(funkar ej)//
+@navbarItemHoverBgColor: #BBE4B6;
+
+
+
+@outer-wrap-after-main: #EEEEEE;
+@outer-wrap-footer: #92CF87;
+
+html {
+
+}
+
+/*
+//navbarknapparna
+.rm-desktop li a{
+
+}
+
+.rm-desktop li a:hover{
+background:linear-gradient(to bottom left, red, orange, yellow, green, blue, violet);
+}*/
+
+
+//Verklig ytterkant
+/*.wrap-all {
+    background-color: @background-color;
+    border-style: groove;
+}*/
+
+/*.inner-wrap-main {
+    background-color: @main-color;
+}*/
+
+//runt knapparna hela bredden av skärmen
+
+.footer-column-wrapper {
+    margin-bottom: 0;
+}
+
+.outer-wrap-header {
+    background-color: @outer-header;
+    border-bottom: solid 20px;
+    margin:0;
+}
+
+
+.footer-column-wrapper,.outer-wrap-header,.outer-wrap-main {
+ margin:0;
+}
+
+
+
+
+//runt knapparna hela bredden av skärmen
+/*.outer-wrap-main {
+    background-color: pink;
+}/*
+
+/*.outer-wrap-after-main {
+    background-color: @outer-wrap-after-main;
+}*/
+
+
+//streck vid gränsen till footarna
+.outer-wrap-footer {
+    background-color: @outer-wrap-footer;
+    border-top: solid 15px;
+}
+
+/*.footer-column-wrapper {
+    background-color: @footer-column-color;
+}*/
+
+
+/*.column .footer-column {
+
+    margin-bottom: 0;
+}*/
+
+.footer-column  {
+    margin:0;
+}
+
+
+.footer-column-1 {
+
+    background-color: red;
+    /*border-right: solid 15px;
+    border-left: solid 15px;*/
+    border-top: solid;
+    border-bottom: solid;
+    background-image: url("../img/basketball.png")
+}
+.footer-column-2 {
+    background-color: blue;
+    border-right: solid 15px;
+    border-left: solid 15px;
+    border-top: solid;
+    border-bottom: solid;
+    background-image: url("../img/brick-wall-dark.png")
+}
+
+.footer-column-3 {
+    background-color: grey;
+    /*border-right: solid 15px;
+    border-left: solid 15px;*/
+    height: 115px;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: solid 15px;
+    background-image: url("../img/black-linen.png")
+}
+
+//Nedersta footern
+.site-footer {
+    border-top: solid 15px;
+    width: 100%;
+    margin-left:0;
+    margin-right:0;
+    margin-bottom:0;
+    background-color: yellow;
+    background-image: url("../img/cartographer.png");
+}
+
+/*.inner-wrap .inner-wrap-footer .row{
+    border-left: solid thick;
+}*/
+
+.row{
+    border-left: solid 15px;
+    border-right: solid 15px;
+    background-color: pink;
+    background-image: url("../img/cutcube.png");
+}
+
+.column.footer-column {
+    height: 120px; /*ev 113*/
+    margin:0;
+}
+
+
+
+.byline {
+    background-color: @byline;
+}
+
+.sidebar .sidebar-right .has-sidebar-right .has-sidebar {
+    margin: solid 15px;
+}
+
+//fixa till knapparna
+.rm-default a {
+    padding-left:3px;
+    padding-right:3px;
+    border-left: solid 7px;
+    border-right: solid 7px;
+
+}
+
+.rm-desktop li {
+    border-style: none;
+    border-width:0;
+    margin-left:-2px;
+    margin-right:-2px;
+}
+
+//bort med utrymmet under knapparna
+.site-header {
+    height: 0px;
+}
+.block.site-footer {
+    margin-bottom: 0;
+}

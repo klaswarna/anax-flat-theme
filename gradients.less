@@ -1,0 +1,97 @@
+//bakgrundsfärger med gradient i flera av sidans regioner
+
+@import url(normalize.less);
+//@import url(layout.less);
+@import url(responsive-menu.less);
+//@import url(grid-float.less);
+@import url(typography.less);
+@import url(figure.less);
+@import url(base.less);
+
+
+
+
+
+
+
+
+
+
+@background-color: #ECF8EB;
+@main-color: #EEEEEE;
+@footer-column-color: #BBE4B6;
+@site-footer-color: #BBE4B6;
+@outer-header: #DDDDDD;
+@byline: #559143;
+
+
+
+//navbaren
+@navbarItemBgColor:         #92CF87;
+@navbarItemSelectedBgColor: #DDDDDD; //(funkar ej)//
+@navbarItemHoverBgColor: #BBE4B6;
+
+
+
+@outer-wrap-after-main: #EEEEEE;
+@outer-wrap-footer: #92CF87;
+
+html {
+    background:linear-gradient(red, orange, yellow, green, blue, violet);
+}
+
+//navbarknapparna
+.rm-desktop li a{
+background:linear-gradient(to bottom right, red, orange, yellow, green, blue, violet);
+}
+
+.rm-desktop li a:hover{
+background:linear-gradient(to bottom left, red, orange, yellow, green, blue, violet);
+}
+
+
+
+/*.wrap-all {
+    background-color: @background-color;
+}*/
+
+/*.inner-wrap-main {
+    background-color: @main-color;
+}*/
+
+/*.outer-wrap-header {
+    background-color: @outer-header;
+}*/
+
+/*.outer-wrap-main {
+    background-color: @main-color;
+}*/
+
+/*.outer-wrap-after-main {
+    background-color: @outer-wrap-after-main;
+}*/
+
+.outer-wrap-footer {
+    background-color: @outer-wrap-footer;
+    background:linear-gradient(to left, red, orange, yellow, green, blue, violet);
+
+}
+
+
+/*.footer-column-wrapper {
+    background-color: @footer-column-color;
+}*/
+
+.footer-column {
+    background:linear-gradient(to bottom right, red, orange, yellow, green, blue, violet);
+}
+
+
+
+.site-footer {
+    background:linear-gradient(to top right, red, orange, yellow, green, blue, violet);
+}
+
+.byline {
+    background-color: @byline;
+}
